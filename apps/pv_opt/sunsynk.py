@@ -82,7 +82,7 @@ class InverterController:
 
     def enable_timed_mode(self):
         if (
-            self.type == "SUNSYNK_SOLARSYNC2"
+            self.type == "SUNSYNK_SOLARSYNK2"
         ):
             pass
 
@@ -98,7 +98,7 @@ class InverterController:
 
     def hold_soc(self, enable, soc=None):
         if (
-            self.type == "SUNSYNK_SOLARSYNC2"
+            self.type == "SUNSYNK_SOLARSYNK2"
         ):
             if enable:
                 self._solis_set_mode_switch(
@@ -135,7 +135,7 @@ class InverterController:
     def status(self):
         status = None
         if (
-            self.type == "SUNSYNK_SOLARSYNC2"
+            self.type == "SUNSYNK_SOLARSYNK2"
         ):
             status = "Status"
 
